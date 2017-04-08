@@ -9,7 +9,7 @@ class pengguna extends Model
     protected $table ='pengguna';
 	protected $fillable = ['username','password']; 
 
-	 protected $table = 'pengguna'
+
     public function Dosen()
     {
     	return $this->hasOne(dosen::class,'pengguna_id');
